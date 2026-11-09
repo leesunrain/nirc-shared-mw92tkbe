@@ -1,0 +1,8 @@
+NIRC 빛달 기록찾기 v0.5
+상태: 배포 전 / Vercel projectId 및 Production URL 확인 필요
+분류: v0.4에서 이어지는 기존 앱 업데이트. 기존 Vercel 배포 여부 미확인.
+
+기존 앱으로 배포한 적이 있다면 기존 projectId와 Production URL을 확인한 후 동일 프로젝트 Production에 업데이트하세요. 신규 프로젝트를 임의로 만들지 마세요.
+기존 localStorage 키(nirc-athlete, nirc-distance, nirc-names, nirc-results)를 유지했습니다. 같은 Origin에서 업데이트할 때 기존 데이터가 유지되도록 설계했습니다. 다른 도메인으로 옮기면 브라우저 저장 데이터가 자동 이전되지 않습니다.
+배포 전 PWA manifest 및 기존 서비스워커, 데이터 저장 구조 확인 필수. 이 ZIP은 별도 manifest나 서비스워커를 새로 생성하지 않습니다.
+배포 후 기존 URL, 버전, 버튼 작동, 홈화면 바로가기, 기존 기록 보존을 검증하세요.
